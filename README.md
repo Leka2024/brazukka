@@ -1,1 +1,3 @@
 # brazukka
+
+- initial setup
