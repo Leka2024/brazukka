@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "brazukka:serve": "nx run brazukka:serve --port 4000",
+    "brazukka:build": "nx run brazukka:build --configuration=production",
+    "maxxy-tiles:serve": "nx run maxxy-tiles:serve --port 5000",
+    "maxxy-tiles:build": "nx run maxxy-tiles:build --configuration=production",
     "storybook": "nx run ui:storybook"
   },
   "private": true,

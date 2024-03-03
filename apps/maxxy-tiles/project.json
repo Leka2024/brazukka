@@ -1,23 +1,26 @@
 {
-  "name": "brazukka",
+  "name": "maxxy-tiles",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "brazukka",
-  "sourceRoot": "apps/brazukka/src",
+  "sourceRoot": "apps/maxxy-tiles/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/brazukka",
-        "index": "apps/brazukka/src/index.html",
-        "browser": "apps/brazukka/src/main.ts",
+        "outputPath": "dist/apps/maxxy-tiles",
+        "index": "apps/maxxy-tiles/src/index.html",
+        "browser": "apps/maxxy-tiles/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/brazukka/tsconfig.app.json",
+        "tsConfig": "apps/maxxy-tiles/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/brazukka/src/favicon.ico", "apps/brazukka/src/assets"],
-        "styles": ["apps/brazukka/src/styles.scss"],
+        "assets": [
+          "apps/maxxy-tiles/src/favicon.ico",
+          "apps/maxxy-tiles/src/assets"
+        ],
+        "styles": ["apps/maxxy-tiles/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -48,10 +51,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "brazukka:build:production"
+          "buildTarget": "maxxy-tiles:build:production"
         },
         "development": {
-          "buildTarget": "brazukka:build:development"
+          "buildTarget": "maxxy-tiles:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -59,14 +62,14 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "brazukka:build"
+        "buildTarget": "maxxy-tiles:build"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "brazukka:build",
-        "staticFilePath": "dist/apps/brazukka/browser"
+        "buildTarget": "maxxy-tiles:build",
+        "staticFilePath": "dist/apps/maxxy-tiles/browser"
       }
     }
   }
