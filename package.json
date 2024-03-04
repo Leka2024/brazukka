@@ -92,6 +92,6 @@
     "@nx/nx-darwin-arm64": "17.0.3",
     "@nx/nx-darwin-x64": "17.0.3",
     "@nx/nx-linux-x64-gnu": "17.0.3",
-    "@nx/nx-win32-x64-msvc": "17.0.3",
+    "@nx/nx-win32-x64-msvc": "17.0.3"
   }
 }
