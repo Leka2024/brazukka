@@ -6,7 +6,7 @@ export default {
   coverageDirectory: '../../coverage/apps/maxxy-tiles',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
-      'jest-preset-angular',
+      'ts-jest',
       {
         tsconfig: '<rootDir>/tsconfig.spec.json',
         stringifyContentPathRegex: '\\.(html|svg)$',
