@@ -6,7 +6,7 @@
     "brazukka:serve": "nx run brazukka:serve --port 4000",
     "brazukka:build": "nx run brazukka:build --configuration=production",
     "maxxy-tiles:serve": "nx run maxxy-tiles:serve --port 5000",
-    "maxxy-tiles:build": "nx run maxxy-tiles:build --configuration=production --skip-tests",
+    "maxxy-tiles:build": "nx run maxxy-tiles:build --configuration=production --project=maxxy-tiles --skip-tests",
     "storybook": "nx run ui:storybook"
   },
   "private": true,
