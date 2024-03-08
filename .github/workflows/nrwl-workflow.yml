@@ -37,3 +37,7 @@ jobs:
     - name: Build Maxxy-Tiles
       run: npm run maxxy-tiles:build
 
+    # 6. Deploy to AWS
+    - name: Deploy to AWS
+      if: success()
+      run: aws s3 sync ./dist/maxxy-tiles/browser s3://brazukka-websites
