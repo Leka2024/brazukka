@@ -25,7 +25,6 @@
       },
       "configurations": {
         "production": {
-          "skipTests": true,
           "budgets": [
             {
               "type": "initial",
