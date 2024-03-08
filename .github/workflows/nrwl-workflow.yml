@@ -9,12 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    # 1. Checkout Repository
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        ref: main
 
-      - uses: mansagroup/nrwl-nx-action@v3
-        with:
-          targets: lint
+    # 2. Setup Node
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.13.0'
 
