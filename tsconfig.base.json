@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@brazukka/ui": ["libs/ui/src/index.ts"]
+      "@brazukka/components": ["libs/ui/src/index.ts"],
+      "@brazukka/assets": ["libs/shared/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]
