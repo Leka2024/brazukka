@@ -1,10 +1,16 @@
-import { Meta, StoryObj } from '@storybook/angular';
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 
+import { AssetsModule } from './../../../assets/assets.module';
 import { IconComponent } from './icon.component';
 
 export default {
   title: 'Atoms/Icon',
-  component: IconComponent
+  component: IconComponent,
+  decorators: [
+    moduleMetadata({
+      imports: [AssetsModule]
+    })
+  ]
 } as Meta<IconComponent>;
 
 type TIconTemplate = StoryObj<IconComponent>;
@@ -12,14 +18,18 @@ type TIconTemplate = StoryObj<IconComponent>;
 export const primary: TIconTemplate = {
   args: {
     label: 'Primary Button',
-    color: 'primary'
+    color: 'primary',
+    size: 'regular',
+    type: 'plus'
   }
 }
 
 export const secondary: TIconTemplate = {
   args: {
     label: 'Secondary Button',
-    color: 'secondary'
+    color: 'secondary',
+    size: 'regular',
+    type: 'plus'
   }
 }
 

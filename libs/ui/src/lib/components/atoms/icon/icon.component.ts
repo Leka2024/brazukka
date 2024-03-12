@@ -1,6 +1,9 @@
 import {ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, SimpleChanges} from '@angular/core';
 
-import { IconsRegistryService } from '../../../assets';
+import { IconsRegistryService } from '@brazukka/assets';
+
+export type TColors = 'black' | 'white' | 'gray' | 'primary' | 'secondary';
+export type TSizes = 'small' | 'extra-small' | 'regular' | 'medium' | 'large' | 'huge';
 
 @Component({
   selector: 'app-icon',
@@ -11,9 +14,9 @@ import { IconsRegistryService } from '../../../assets';
 export class IconComponent implements OnChanges {
 
   @Input() label: string | undefined;
-  @Input() color: string | 'default' = 'default';
+  @Input() color: TColors = 'black';
   @Input() css!: string;
-  @Input() size: 'small' | 'extra-small' | 'regular' | 'medium' | 'large' | 'huge' = 'regular';
+  @Input() size: TSizes = 'regular';
   @Input() type = '';
 
   constructor(private readonly element: ElementRef,

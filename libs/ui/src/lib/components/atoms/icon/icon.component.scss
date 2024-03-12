@@ -1,6 +1,10 @@
 @import '../../../styling/main.scss';
 
-$default-icon-color: black;
+$icon-color-black: black;
+$icon-color-white: white;
+$icon-color-gray: gray;
+$icon-color-primary: #7ba9a9;
+$icon-color-secondary: #d39f99;
 
 :host {
   position: relative;
@@ -128,13 +132,57 @@ i.app-icon {
     }
   }
 
-  &.color-default {
+  &.color-black {
     ::ng-deep svg {
       circle {
-        fill: $default-icon-color;
+        fill: $icon-color-black;
       }
       path {
-        fill: $default-icon-color;
+        fill: $icon-color-black;
+      }
+    }
+  }
+
+  &.color-white {
+    ::ng-deep svg {
+      circle {
+        fill: $icon-color-white;
+      }
+      path {
+        fill: $icon-color-white;
+      }
+    }
+  }
+
+  &.color-gray {
+    ::ng-deep svg {
+      circle {
+        fill: $icon-color-gray;
+      }
+      path {
+        fill: $icon-color-gray;
+      }
+    }
+  }
+
+  &.color-primary {
+    ::ng-deep svg {
+      circle {
+        fill: $icon-color-primary;
+      }
+      path {
+        fill: $icon-color-primary;
+      }
+    }
+  }
+
+  &.color-secondary {
+    ::ng-deep svg {
+      circle {
+        fill: $icon-color-secondary;
+      }
+      path {
+        fill: $icon-color-secondary;
       }
     }
   }

@@ -1,2 +1,2 @@
-export * from './icon/icon.component';
-export * from './country/country.component';
+export { IconComponent } from './icon/icon.component';
+export { CountryComponent } from './country/country.component';

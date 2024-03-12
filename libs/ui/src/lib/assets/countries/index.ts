@@ -1,2 +1,2 @@
-export * from './country.flag.registry.service';
+export * from './country.registry.service';
 export * from './country';

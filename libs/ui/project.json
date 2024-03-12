@@ -11,7 +11,6 @@
       "options": {
         "port": 4400,
         "configDir": ".storybook",
-        // "configDir": "libs/ui/.storybook",
         "browserTarget": "ui:build-storybook",
         "compodoc": true,
         "compodocArgs": ["-e", "json", "-d", "./generated"]
@@ -28,7 +27,6 @@
       "options": {
         "outputDir": "dist/storybook/ui",
         "configDir": ".storybook",
-        // "configDir": "libs/ui/.storybook",
         "browserTarget": "ui:build-storybook",
         "compodoc": true,
         "compodocArgs": ["-e", "json", "-d", "./generated"]
