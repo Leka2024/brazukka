@@ -1,0 +1,174 @@
+@import '../../../styling/main.scss';
+
+$font-color-black: black;
+$font-color-white: white;
+$font-color-gray: gray;
+$font-color-primary: #7ba9a9;
+$font-color-secondary: #d39f99;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.brazukka-link {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0 $size-2 0 0;
+  border-radius: $size-1;
+  box-shadow: none;
+  color: $font-color-black;
+  cursor: pointer;
+  font-family: $font-default;
+  font-size: $font-size-regular;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  outline: 0;
+  outline-offset: 0;
+  text-decoration: none;
+  transition: color .15s $ease-in-quad, box-shadow .15s $ease-in-quad;
+  user-select: auto;
+  vertical-align: baseline;
+  white-space: nowrap;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+
+  &.black {
+    color: $font-color-black;
+
+    &::after {
+      background-color: $font-color-primary;
+    }
+
+    &:hover {
+      color: $font-color-primary;
+    }
+
+    &:focus {
+      color: $font-color-primary;
+    }
+
+    &:active {
+      color: $font-color-primary;
+    }
+  }
+
+  &.white {
+    color: $font-color-white;
+
+    &::after {
+      background-color: $font-color-gray;
+    }
+
+    &:hover {
+      color: $font-color-gray;
+    }
+
+    &:focus {
+      color: $font-color-gray;
+    }
+
+    &:active {
+      color: $font-color-gray;
+    }
+  }
+
+  &.gray {
+    color: $font-color-gray;
+
+    &::after {
+      background-color: $font-color-black;
+    }
+
+    &:hover {
+      color: $font-color-black;
+    }
+
+    &:focus {
+      color: $font-color-black;
+    }
+
+    &:active {
+      color: $font-color-black;
+    }
+  }
+
+  &.primary {
+    color: $font-color-primary;
+
+    &::after {
+      background-color: $font-color-secondary;
+    }
+
+    &:hover {
+      color: $font-color-secondary;
+    }
+
+    &:focus {
+      color: $font-color-secondary;
+    }
+
+    &:active {
+      color: $font-color-secondary;
+    }
+  }
+
+  &.secondary {
+    color: $font-color-secondary;
+
+    &::after {
+      background-color: $font-color-primary;
+    }
+
+    &:hover {
+      color: $font-color-primary;
+    }
+
+    &:focus {
+      color: $font-color-primary;
+    }
+
+    &:active {
+      color: $font-color-primary;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: -0.25rem;
+    left: 0;
+    width: 100%;
+    height: $size-1px;
+    background-color: $font-color-primary;
+    content: '';
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transform-style: preserve-3d;
+    transition: transform .15s $ease-in-quad;
+  }
+
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &:focus {
+    box-shadow: $ring-focus;
+
+    &::after {
+      transform: scaleX(0);
+    }
+  }
+
+  &:active {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
