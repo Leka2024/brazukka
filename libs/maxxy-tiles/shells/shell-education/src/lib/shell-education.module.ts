@@ -1,20 +1,27 @@
 // Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
+import { AssetsModule } from '@brazukka/assets';
 import { CommonModule } from '@angular/common';
-import { MaxxyTilesLayoutComponent } from '@brazukka/components';
+import { ComponentsModule } from '@brazukka/components';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ShellEducationLayoutComponent } from './layout/shell-education-layout.component';
 
 @NgModule({
   imports: [
-      CommonModule,
-      RouterModule.forChild([
-          {
-            path: '',
-            component: MaxxyTilesLayoutComponent,
-            loadChildren: () =>
-              import('@brazukka/maxxy-tiles/feature-education').then(module => module.FeatureEducationModule),
-          }
-      ]),
+    AssetsModule,
+    CommonModule,
+    ComponentsModule,
+    RouterModule.forChild([
+      {
+        path: '',
+        component: ShellEducationLayoutComponent,
+        loadChildren: () =>
+          import('@brazukka/maxxy-tiles/feature-education').then(
+            (module) => module.FeatureEducationModule,
+          ),
+      },
+    ]),
   ],
+  declarations: [ShellEducationLayoutComponent],
 })
 export class ShellEducationModule {}
