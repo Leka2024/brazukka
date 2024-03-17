@@ -1,1 +1,31 @@
-<p>button works!</p>
+<button
+  class="brazukka-button color-{{ color }} size-{{ size }}"
+  title="{{ label }}"
+  (click)="click($event)">
+  <!-- <ng-container *ngIf="iconPosition === 'left'">
+    <app-icon
+      *ngIf="showIcon()"
+      css="size-{{ size }} {{ !iconOnly ? 'margin-right': '' }}"
+      [type]="icon"
+      [set]="iconSet">
+    </app-icon>
+  </ng-container> -->
+  <span *ngIf="!this.iconOnly" class="brazukka-button-label">{{ label }}</span>
+
+  <ng-container *ngIf="this.iconSet === 'icon'">
+    <brazukka-icon [label]="label" [type]="icon ?? ''" [size]="size" color="primary"></brazukka-icon>
+  </ng-container>
+
+  <ng-container *ngIf="this.iconSet === 'country'">
+    <brazukka-country [label]="label" [type]="icon ?? 'nl'" [size]="size"></brazukka-country>
+  </ng-container>
+  <!-- <ng-container *ngIf="iconPosition === 'right'">
+    <app-icon
+      *ngIf="showIcon()"
+      css="size-{{ size }} margin-left"
+      [color]="action"
+      [type]="icon"
+      [set]="iconSet">
+    </app-icon>
+  </ng-container> -->
+</button>

@@ -1,5 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
+import type { ComponentFixture } from '@angular/core/testing';
 import { LinkComponent } from './link.component';
+import { TestBed } from '@angular/core/testing';
 
 describe('LinkComponent', () => {
   let component: LinkComponent;

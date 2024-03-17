@@ -1,5 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
+import type { ComponentFixture } from '@angular/core/testing';
 import { HeaderComponent } from './header.component';
+import { TestBed } from '@angular/core/testing';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;

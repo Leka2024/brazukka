@@ -1,8 +1,11 @@
-import { AssetsModule } from './../../../assets/assets.module';
-import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 
-import { LinkComponent } from './link.component';
+import type { Meta, StoryObj } from '@storybook/angular';
+
+import { AssetsModule } from './../../../assets/assets.module';
 import { AtomsModule } from '../atoms.module';
+import { LinkComponent } from './link.component';
+import { moduleMetadata } from '@storybook/angular';
 
 export default {
   title: 'Atoms/Link',

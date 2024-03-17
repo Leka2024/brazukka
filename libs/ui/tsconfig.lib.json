@@ -15,5 +15,5 @@
     "**/*.stories.ts",
     "**/*.stories.js"
   ],
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src/lib/storybook/colors.stories.ts-backup"]
 }

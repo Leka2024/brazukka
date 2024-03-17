@@ -1,3 +1,113 @@
+@import '../../../styling/main.scss';
+
+$button-color-black: black;
+$button-color-white: white;
+$button-color-gray: gray;
+$button-color-primary: #7ba9a9;
+$button-color-secondary: #d39f99;
+
+$font-color-black: black;
+$font-color-white: white;
+$font-color-gray: gray;
+$font-color-primary: #7ba9a9;
+$font-color-secondary: #d39f99;
+
 :host {
   display: block;
+}
+
+.brazukka-button {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  padding: $size-4 $size-10 $size-4 $size-10;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: $size-1;
+  box-shadow: $ring-transparent;
+  cursor: pointer;
+  font-family: $font-default;
+  font-size: $font-size-regular;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.025rem;
+  line-height: 1;
+  outline: 0;
+  outline-offset: 0;
+  transition: color 0.15s $ease-in-quad, background-color 0.15s $ease-in-quad;
+  white-space: nowrap;
+
+  span {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: 1;
+  }
+
+  &.color-black {
+    background-color: $button-color-black;
+    color: $font-color-white;
+
+    &:hover:not(:disabled) {
+      background-color: red;
+    }
+
+    &:focus:not(:disabled) {
+      background-color: orange;
+      box-shadow: $ring-focus;
+    }
+
+    &:active:not(:disabled) {
+      background-color: lightblue;
+      box-shadow: $ring-active;
+    }
+  }
+
+  &.color-white {
+    background-color: $button-color-white;
+    color: $font-color-black;
+  }
+
+  &.color-gray {
+    background-color: $button-color-gray;
+    color: $font-color-black;
+  }
+
+  &.color-primary {
+    background-color: $button-color-primary;
+    color: $font-color-black;
+  }
+
+  &.color-secondary {
+    background-color: $button-color-secondary;
+    color: $font-color-black;
+  }
+
+  &.size-extra-small {
+    padding: $size-1 $size-2_5 $size-1 $size-2_5;
+    font-size: $font-size-extra-small;
+  }
+
+  &.size-small {
+    padding: $size-2 $size-3_5 $size-2 $size-3_5;
+  }
+
+  &.size-regular {
+    padding: $size-3 $size-4_5 $size-3 $size-4_5;
+  }
+
+  &.size-medium {
+    padding: $size-4 $size-5_5 $size-4 $size-5_5;
+  }
+
+  &.size-large {
+    padding: $size-6 $size-7_5 $size-6 $size-7_5;
+  }
+
+  &.size-huge {
+    padding: $size-9 $size-10_5 $size-9 $size-10_5;
+  }
 }

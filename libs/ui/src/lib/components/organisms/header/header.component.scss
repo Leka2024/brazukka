@@ -1,3 +1,43 @@
 :host {
   display: block;
 }
+
+$header-color-black: black;
+$header-color-white: white;
+$header-color-gray: gray;
+$header-color-primary: #7ba9a9;
+$header-color-secondary: #d39f99;
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.language-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.color-black {
+  background-color: $header-color-black;
+}
+
+.color-white {
+  background-color: $header-color-white;
+}
+
+.color-gray {
+  background-color: $header-color-gray;
+}
+
+.color-primary {
+  background-color: $header-color-primary;
+}
+
+.color-secondary {
+  background-color: $header-color-secondary;
+}

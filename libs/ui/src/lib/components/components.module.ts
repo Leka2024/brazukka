@@ -1,3 +1,5 @@
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
+
 import { AtomsModule } from './atoms/atoms.module';
 import { CommonModule } from '@angular/common';
 import { MoleculesModule } from './molecules/molecules.module';

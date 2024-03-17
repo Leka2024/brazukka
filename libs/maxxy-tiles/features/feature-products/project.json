@@ -1,0 +1,9 @@
+{
+  "name": "feature-products",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maxxy-tiles/features/feature-products/src",
+  "prefix": "brazukka",
+  "tags": ["feature"],
+  "projectType": "library",
+  "targets": {}
+}

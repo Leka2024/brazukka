@@ -1,0 +1,1 @@
+export type TIconSet = 'icon' | 'country';

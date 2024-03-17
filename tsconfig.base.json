@@ -16,7 +16,35 @@
     "baseUrl": ".",
     "paths": {
       "@brazukka/assets": ["libs/ui/src/lib/assets/index.ts"],
-      "@brazukka/components": ["libs/ui/src//lib/components/index.ts"]
+      "@brazukka/components": ["libs/ui/src/lib/components/index.ts"],
+      "@brazukka/maxxy-tiles/feature-contact": [
+        "libs/maxxy-tiles/features/feature-contact/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/feature-education": [
+        "libs/maxxy-tiles/features/feature-education/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/feature-inspiration": [
+        "libs/maxxy-tiles/features/feature-inspiration/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/feature-products": [
+        "libs/maxxy-tiles/features/feature-products/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/shell-contact": [
+        "libs/maxxy-tiles/shells/shell-contact/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/shell-education": [
+        "libs/maxxy-tiles/shells/shell-education/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/shell-inspiration": [
+        "libs/maxxy-tiles/shells/shell-inspiration/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/shell-maxxy-tiles": [
+        "libs/maxxy-tiles/shells/shell-maxxy-tiles/src/index.ts"
+      ],
+      "@brazukka/maxxy-tiles/shell-products": [
+        "libs/maxxy-tiles/shells/shell-products/src/index.ts"
+      ],
+      "@brazukka/types": ["libs/ui/src/lib/components/types/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

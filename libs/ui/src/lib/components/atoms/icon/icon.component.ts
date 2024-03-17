@@ -1,12 +1,14 @@
-import {ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, SimpleChanges} from '@angular/core';
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 
+import {ChangeDetectionStrategy, Component, Input, ElementRef, Inject} from '@angular/core';
+import type { OnChanges, SimpleChanges } from '@angular/core';
+import type { TColors, TSizes } from '@brazukka/types';
+
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import { IconsRegistryService } from '@brazukka/assets';
 
-export type TColors = 'black' | 'white' | 'gray' | 'primary' | 'secondary';
-export type TSizes = 'small' | 'extra-small' | 'regular' | 'medium' | 'large' | 'huge';
-
 @Component({
-  selector: 'app-icon',
+  selector: 'brazukka-icon',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -14,12 +16,12 @@ export type TSizes = 'small' | 'extra-small' | 'regular' | 'medium' | 'large' | 
 export class IconComponent implements OnChanges {
 
   @Input() label: string | undefined;
-  @Input() color: TColors = 'black';
+  @Input({required: true}) color: TColors = 'black';
   @Input() css!: string;
   @Input() size: TSizes = 'regular';
   @Input() type = '';
 
-  constructor(private readonly element: ElementRef,
+  constructor(@Inject(ElementRef) private readonly element: ElementRef,
               private readonly iconsRegistry: IconsRegistryService) { }
 
   ngOnChanges(changes: SimpleChanges): void {

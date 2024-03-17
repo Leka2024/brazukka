@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 
+import type { ComponentFixture } from '@angular/core/testing';
 import { IconComponent } from './icon.component';
+import { TestBed } from '@angular/core/testing';
 
 describe('IconComponent', () => {
   let component: IconComponent;

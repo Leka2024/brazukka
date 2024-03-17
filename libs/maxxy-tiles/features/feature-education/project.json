@@ -1,0 +1,9 @@
+{
+  "name": "feature-education",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maxxy-tiles/features/feature-education/src",
+  "prefix": "brazukka",
+  "tags": ["feature"],
+  "projectType": "library",
+  "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "shell-maxxy-tiles",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maxxy-tiles/shells/shell-maxxy-tiles/src",
+  "prefix": "brazukka",
+  "tags": ["shell"],
+  "projectType": "library",
+  "targets": {}
+}

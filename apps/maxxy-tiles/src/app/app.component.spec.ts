@@ -1,12 +1,13 @@
-import { TestBed } from '@angular/core/testing';
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
+
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { TestBed } from '@angular/core/testing';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, NxWelcomeComponent, RouterTestingModule],
+      imports: [AppComponent, RouterTestingModule],
     }).compileComponents();
   });
 

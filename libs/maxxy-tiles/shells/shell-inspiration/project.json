@@ -1,0 +1,9 @@
+{
+  "name": "shell-inspiration",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maxxy-tiles/shells/shell-inspiration/src",
+  "prefix": "brazukka",
+  "tags": ["shell"],
+  "projectType": "library",
+  "targets": {}
+}

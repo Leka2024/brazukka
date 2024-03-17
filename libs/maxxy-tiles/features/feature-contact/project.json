@@ -1,0 +1,9 @@
+{
+  "name": "feature-contact",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maxxy-tiles/features/feature-contact/src",
+  "prefix": "brazukka",
+  "tags": ["feature"],
+  "projectType": "library",
+  "targets": {}
+}

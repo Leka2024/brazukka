@@ -1,3 +1,38 @@
 :host {
   display: block;
 }
+
+$footer-color-black: black;
+$footer-color-white: white;
+$footer-color-gray: gray;
+$footer-color-primary: #7ba9a9;
+$footer-color-secondary: #d39f99;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.color-black {
+  background-color: $footer-color-black;
+}
+
+.color-white {
+  background-color: $footer-color-white;
+}
+
+.color-gray {
+  background-color: $footer-color-gray;
+}
+
+.color-primary {
+  background-color: $footer-color-primary;
+}
+
+.color-secondary {
+  background-color: $footer-color-secondary;
+}
