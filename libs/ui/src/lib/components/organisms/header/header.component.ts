@@ -2,6 +2,7 @@
 
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
+import { Router } from '@angular/router';
 import type { TColors } from '@brazukka/types';
 
 /**
@@ -15,5 +16,12 @@ import type { TColors } from '@brazukka/types';
 })
 export class HeaderComponent {
   @Input({required: true}) title!: string;
-  @Input({required: true}) color!: TColors;
+  @Input({required: true}) color!: TColors | 'transparent';
+
+  constructor(private readonly router: Router) {
+  }
+
+  navigateTo(route: string): void {
+    this.router.navigate([`/${route}`]);
+  }
 }

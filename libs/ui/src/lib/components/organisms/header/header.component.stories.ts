@@ -21,9 +21,45 @@ export default {
 
 type TIconTemplate = StoryObj<HeaderComponent>;
 
-export const header: TIconTemplate = {
+export const transparent: TIconTemplate = {
+  args: {
+    title: 'Maxxy-tiles',
+    color: 'transparent'
+  }
+}
+
+export const black: TIconTemplate = {
+  args: {
+    title: 'Maxxy-tiles',
+    color: 'black'
+  }
+}
+
+export const white: TIconTemplate = {
+  args: {
+    title: 'Maxxy-tiles',
+    color: 'white'
+  }
+}
+
+export const gray: TIconTemplate = {
+  args: {
+    title: 'Maxxy-tiles',
+    color: 'gray'
+  }
+}
+
+
+export const primary: TIconTemplate = {
   args: {
     title: 'Maxxy-tiles',
     color: 'primary'
+  }
+}
+
+export const secondary: TIconTemplate = {
+  args: {
+    title: 'Maxxy-tiles',
+    color: 'secondary'
   }
 }

@@ -1,0 +1,19 @@
+<div class="item">
+  <div class="item-description">
+    <div class="item-title">{{ title }}</div>
+    <div *ngIf="subtitle" class="item-subtitle">{{ subtitle }}</div>
+  </div>
+  <div class="swatches">
+    <div class="swatch-specimen">
+      <div class="swatch-colors">
+        <div *ngFor="let color of colors; index as i" class="swatch" [style.background]="color.color"></div>
+      </div>
+      <div class="swatch-labels">
+        <div *ngFor="let color of colors; index as i" class="swatch-label bold">{{ color.function }}</div>
+        <div *ngFor="let color of colors; index as i" class="swatch-label">{{ color.color }}</div>
+        <div *ngFor="let color of colors; index as i" class="swatch-label">{{ color.scssVariable }}</div>
+        <div *ngFor="let color of colors; index as i" class="swatch-label">{{ color.cssVariable }}</div>
+      </div>
+    </div>
+  </div>
+</div>

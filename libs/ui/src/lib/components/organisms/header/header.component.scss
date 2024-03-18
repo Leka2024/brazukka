@@ -15,11 +15,47 @@ header {
   width: 100%;
 }
 
-.language-block {
+.header-logo {
+  display        : flex;
+  flex-direction : row;
+  justify-content: center;
+  align-items    : center;
+}
+.header-container {
+  margin:         0 3rem;
+  display:        flex;
+  flex-direction: row;
+  width:          100%;
+}
+
+.header-navigation {
+  display: flex;
+  width:   100%;
+}
+nav {
+  margin: 1rem 3rem;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-list {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  width          : 100%;
+}
+.header-languages {
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 0.25rem;
+}
+
+.color-transparent {
+  background-color: transparent;
 }
 
 .color-black {
