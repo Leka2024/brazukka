@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '@brazukka/components';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ShellInspirationLayoutComponent } from './layout/shell-inspiration-layout.component';
 
 @NgModule({
   imports: [
@@ -14,7 +13,6 @@ import { ShellInspirationLayoutComponent } from './layout/shell-inspiration-layo
     RouterModule.forChild([
       {
         path: '',
-        component: ShellInspirationLayoutComponent,
         loadChildren: () =>
           import('@brazukka/maxxy-tiles/feature-inspiration').then(
             (module) => module.FeatureInspirationModule,
@@ -22,6 +20,5 @@ import { ShellInspirationLayoutComponent } from './layout/shell-inspiration-layo
       },
     ]),
   ],
-  declarations: [ShellInspirationLayoutComponent],
 })
 export class ShellInspirationModule {}

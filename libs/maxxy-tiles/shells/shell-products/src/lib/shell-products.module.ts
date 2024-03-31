@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '@brazukka/components';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ShellProductsLayoutComponent } from './layout/shell-products-layout.component';
 
 @NgModule({
   imports: [
@@ -14,7 +13,6 @@ import { ShellProductsLayoutComponent } from './layout/shell-products-layout.com
     RouterModule.forChild([
       {
         path: '',
-        component: ShellProductsLayoutComponent,
         loadChildren: () =>
           import('@brazukka/maxxy-tiles/feature-products').then(
             (module) => module.FeatureProductsModule,
@@ -22,6 +20,5 @@ import { ShellProductsLayoutComponent } from './layout/shell-products-layout.com
       },
     ]),
   ],
-  declarations: [ShellProductsLayoutComponent],
 })
 export class ShellProductsModule {}

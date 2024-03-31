@@ -18,4 +18,5 @@ export class MaxxyTilesLayoutComponent {
   @Input({required: true}) headerTitle!: string;
   @Input({required: true}) headerColor!: TColors;
   @Input({required: true}) footerColor!: TColors;
+
 }

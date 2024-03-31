@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -21,4 +21,5 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'maxxy-tiles';
+
 }

@@ -13,7 +13,7 @@
     "../libs/ui/**/*.spec.ts"
   ],
   "include": [
-    "../libs/ui/**/*",
+    "../libs/ui/**/*", "../libs/maxxy-tiles/shells/shell-maxxy-tiles/src/lib/maxxy-tiles-layout.animations.ts",
   ],
   "files": [
     "./typings.d.ts"

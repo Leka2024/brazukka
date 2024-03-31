@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '@brazukka/components';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ShellEducationLayoutComponent } from './layout/shell-education-layout.component';
 
 @NgModule({
   imports: [
@@ -14,7 +13,6 @@ import { ShellEducationLayoutComponent } from './layout/shell-education-layout.c
     RouterModule.forChild([
       {
         path: '',
-        component: ShellEducationLayoutComponent,
         loadChildren: () =>
           import('@brazukka/maxxy-tiles/feature-education').then(
             (module) => module.FeatureEducationModule,
@@ -22,6 +20,5 @@ import { ShellEducationLayoutComponent } from './layout/shell-education-layout.c
       },
     ]),
   ],
-  declarations: [ShellEducationLayoutComponent],
 })
 export class ShellEducationModule {}

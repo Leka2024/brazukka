@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '@brazukka/components';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ShellContactLayoutComponent } from './layout/shell-contact-layout.component';
 
 @NgModule({
   imports: [
@@ -14,7 +13,6 @@ import { ShellContactLayoutComponent } from './layout/shell-contact-layout.compo
     RouterModule.forChild([
       {
         path: '',
-        component: ShellContactLayoutComponent,
         loadChildren: () =>
           import('@brazukka/maxxy-tiles/feature-contact').then(
             (module) => module.FeatureContactModule,
@@ -22,6 +20,5 @@ import { ShellContactLayoutComponent } from './layout/shell-contact-layout.compo
       },
     ]),
   ],
-  declarations: [ShellContactLayoutComponent],
 })
 export class ShellContactModule {}
