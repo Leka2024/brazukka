@@ -1,6 +1,12 @@
 // Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
+export interface IColorItem {
+  title: string;
+  subtitle: string;
+  colors: Array<IColor>;
+}
+
 interface IColor {
   color: string;
   function: string;

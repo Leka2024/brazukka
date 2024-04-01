@@ -1,5 +1,6 @@
 // Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import type { IColorItem } from '../color-item/color-item.component';
 
 @Component({
   selector: 'brazukka-color-palette',
@@ -7,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './color-palette.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ColorPaletteComponent {}
+export class ColorPaletteComponent {
+  @Input({required: true}) colors: Array<IColorItem> = [];
+} 

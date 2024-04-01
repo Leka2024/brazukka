@@ -1,7 +1,7 @@
 // Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-import { ActivatedRoute, ChildrenOutletContexts, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import { slideInAnimation } from '../maxxy-tiles-layout.animations';
 
 @Component({
@@ -41,7 +41,7 @@ export class ShellLayoutComponent {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   // eslint-disable-next-line jsdoc/require-jsdoc
-  getRouteAnimationData(outlet: RouterOutlet) {
+  getRouteAnimationData(_outlet: RouterOutlet) {
     // Access the ActivatedRoute snapshot to get the data property of the current route
     const animationData = this.activatedRoute.snapshot.firstChild?.data;
 

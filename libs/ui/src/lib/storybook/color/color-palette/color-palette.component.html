@@ -1,1 +1,3 @@
-<p>color-palette works!</p>
+<div *ngFor="let color of colors">
+    <brazukka-color-item [title]="color.title" [subtitle]="color.subtitle" [colors]="color.colors"></brazukka-color-item>
+</div>
