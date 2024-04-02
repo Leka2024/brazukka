@@ -10,8 +10,14 @@
       </div>
       <div class="swatch-labels">
         <div *ngFor="let color of colors; index as i" class="swatch-label bold">{{ color.function }}</div>
+      </div>
+      <div class="swatch-labels">
         <div *ngFor="let color of colors; index as i" class="swatch-label">{{ color.color }}</div>
+      </div>
+      <div class="swatch-labels">
         <div *ngFor="let color of colors; index as i" class="swatch-label">{{ color.scssVariable }}</div>
+      </div>
+      <div class="swatch-labels">
         <div *ngFor="let color of colors; index as i" class="swatch-label">{{ color.cssVariable }}</div>
       </div>
     </div>
