@@ -76,6 +76,11 @@ $font-color-secondary: #d39f99;
     color: $font-color-black;
   }
 
+  &.color-transparent {
+    background-color: transparent;
+    color: transparent;
+  }
+
   &.color-primary {
     background-color: $button-color-primary;
     color: $font-color-black;

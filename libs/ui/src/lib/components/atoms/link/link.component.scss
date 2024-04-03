@@ -1,7 +1,8 @@
 @import '../../../styling/main.scss';
 
 $font-color-black: black;
-$font-color-white: white;
+$font-color-white: $broken-white;
+$font-color-dark-green: $dark-green;
 $font-color-gray: gray;
 $font-color-primary: #7ba9a9;
 $font-color-secondary: #d39f99;
@@ -60,19 +61,19 @@ $font-color-secondary: #d39f99;
     color: $font-color-white;
 
     &::after {
-      background-color: $font-color-gray;
+      background-color: $font-color-dark-green;
     }
 
     &:hover {
-      color: $font-color-gray;
+      color: $font-color-dark-green;
     }
 
     &:focus {
-      color: $font-color-gray;
+      color: $font-color-dark-green;
     }
 
     &:active {
-      color: $font-color-gray;
+      color: $font-color-dark-green;
     }
   }
 

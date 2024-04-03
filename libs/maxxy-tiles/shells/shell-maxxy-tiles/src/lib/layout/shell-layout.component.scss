@@ -1,13 +1,15 @@
+@import '../../../../../../ui/src/lib/styling/main.scss';
 :host {
   display: block;
+  background-color: $turqoise-light;
 }
 
 .container {
   margin-top: 10px;
   border: solid 3px lightsalmon;
   border-radius: 1rem;
-  padding: 20px;
+  padding: 1rem;
   overflow: hidden;
-  height: 200px;
+  height: 100vh;
   position: relative;
 }

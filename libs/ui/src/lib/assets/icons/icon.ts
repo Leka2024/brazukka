@@ -1,3 +1,4 @@
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 import {boxManager} from './role.icons';
 
 export type BrandNames = '42-group'
@@ -1293,6 +1294,8 @@ export type SolidNames =
   | 'mask'
   | 'masks-theater'
   | 'maximize'
+  | 'maxxy-tiles-logo'
+  | 'maxxy-tiles-background'
   | 'medal'
   | 'memory'
   | 'menorah'

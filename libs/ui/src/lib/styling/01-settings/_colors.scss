@@ -23,10 +23,18 @@ $light-blue: #3dbfff;
 
 $light-green: #6bffba;
 $dark-green: #09432c;
+$green-light: lighten($dark-green, 17);
 $light-orange: #ffad42;
 $orange: #ff6600;
 
 $turqoise: #38cbbe;
+$turqoise-light: lighten($turqoise, 45);
+
+/*
+$color-deep-blue-active: darken($color-deep-blue, 5);
+$color-deep-blue-hover: darken($color-deep-blue, 10);
+$color-deep-blue-focus: darken($color-deep-blue, 15);
+*/
 
 
 :root {

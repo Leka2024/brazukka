@@ -1,3 +1,4 @@
+// Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
 import {Injectable} from '@angular/core';
 import {Icon} from './icon';
 

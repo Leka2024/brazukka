@@ -1,3 +1,4 @@
+@import '../../../styling/main.scss';
 :host {
   display: block;
 }
@@ -6,6 +7,7 @@ $header-color-black: black;
 $header-color-white: white;
 $header-color-gray: gray;
 $header-color-primary: #7ba9a9;
+$header-color-primary: $green-light;
 $header-color-secondary: #d39f99;
 
 header {

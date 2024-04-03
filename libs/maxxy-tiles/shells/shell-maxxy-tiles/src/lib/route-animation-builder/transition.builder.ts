@@ -1,4 +1,5 @@
 // Copyright (c) 2024 Brazukka B.V. Nederland. All Rights Reserved.
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import { AnimationTransitionMetadata, animate, group, query, style, transition } from "@angular/animations";
 
 export class TransitionBuilder {

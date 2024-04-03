@@ -15,7 +15,7 @@ import { OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit{
 
   @Input() label: string | undefined;
-  @Input({required: true}) color: TColors = 'black';
+  @Input({required: true}) color: TColors | 'transparent' = 'black';
   @Input({required: true}) size: TSizes = 'regular';
   @Input() icon: string | undefined;
   @Input() iconOnly: boolean | undefined;
