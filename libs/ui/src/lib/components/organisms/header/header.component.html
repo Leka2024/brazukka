@@ -3,7 +3,7 @@
     <div class="header-logo">
       <brazukka-icon type="maxxy-tiles-logo" color="primary" size="huge"></brazukka-icon>
     </div>
-      <!-- <div class="header-navigation">
+    <!-- <div class="header-navigation">
         <nav>
           <ul class="header-list">
             <li>&nbsp;</li>
@@ -28,6 +28,16 @@
         <brazukka-button label="English" icon="gb" iconSet="country" [iconOnly]="true" color="transparent" size="extra-small"></brazukka-button>
         <brazukka-button label="Portugues" icon="br" iconSet="country" [iconOnly]="true" color="transparent" size="extra-small"></brazukka-button>
       </div> -->
-      <div class="menu-icon"><span></span><span></span></div>
+    <button class="menu-icon" (click)="toggle()"><span></span><span></span></button>
   </div>
 </header>
+<ol class="main-menu" [ngClass]="{'is-visible': visible}">
+  <li><a href="/products" class="nav-link title-layer2-500"><span class="roman-number"><span>I</span></span>Products<span
+        class="description body-layer1-600"></span></a></li>
+  <li><a href="/inspiration" class="nav-link title-layer2-500"><span class="roman-number"><span>II</span></span>INSPIRATION<span
+        class="description body-layer1-600">discover ideas</span></a></li>
+  <li><a href="/education" class="nav-link title-layer2-500"><span class="roman-number"><span>III</span></span>EDUCATION<span
+        class="description body-layer1-600">learning goals</span></a></li>
+  <li><a href="/contact" class="nav-link title-layer2-500"><span class="roman-number"><span>V</span></span>Contact<span
+        class="description body-layer1-600"></span></a></li>
+</ol>

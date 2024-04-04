@@ -18,10 +18,16 @@ export class HeaderComponent {
   @Input({required: true}) title!: string;
   @Input({required: true}) color!: TColors | 'transparent';
 
+  visible = false;
+  
   constructor(private readonly router: Router) {
   }
 
   navigateTo(route: string): void {
     this.router.navigate([`/${route}`]);
+  }
+
+  toggle(): void {
+    this.visible = !this.visible;
   }
 }

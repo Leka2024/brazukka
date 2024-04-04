@@ -59,13 +59,19 @@ nav {
 }
 
 .menu-icon {
-    position: relative;
-    margin-right: 0.5rem;
-    width: 2rem;
-    height: 3rem;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: $size-7;
+  display: block;
+  width: $size-8;
+  height: $size-8;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: $size-2;
+  transition: transform .3s $ease-in-quad;
+  transform: translateY(0);
 }
 
 .menu-icon span {
@@ -82,11 +88,11 @@ nav {
 }
 
 .menu-icon span:first-child {
-  top: 0.75rem;
+  top: 0.25rem;
 }
 
 .menu-icon span:nth-child(2) {
-  top: 1.25rem;
+  top: 0.75rem;
 }
 
 .menu-icon:hover span:first-child {
@@ -95,6 +101,97 @@ nav {
 
 .menu-icon:hover span:nth-child(2) {
   transform: rotate(135deg) translateY(10px);
+}
+
+.main-menu {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: initial;
+  background-color: $dark-green;
+  list-style: none;
+  max-width: 520px;
+  width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+  transition: width .6s ease-out,transform .6s ease-out .6s;
+
+  &.is-visible {
+    width: 100%;
+  }
+}
+
+.main-menu li::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 1px;
+  background-color: $header-color-gray;
+}
+
+.main-menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: $header-color-white;
+  transition: width .6s ease-out,transform .6s ease-out .6s;
+}
+
+.main-menu li:hover::after {
+  width: 100%;
+  background-color: $header-color-white;
+}
+
+.main-menu li a {
+  color: $header-color-gray;
+}
+.main-menu li:hover a {
+  color: $header-color-white;
+}
+
+.nav-link {
+  max-width: 520px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 37px auto 1fr;
+  align-items: baseline;
+  padding: 40px 0 8px;
+  text-decoration: none;
+
+  &.title-layer2-500 {
+    font: normal 2rem / 2.5rem NeuePlak-ExtendedBold, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.roman-number {
+  left: 0.5rem;
+  font-weight: 700;
+  position: relative;
+  font: 700 16px / 24px Noe Text, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
+}
+
+.description {
+  text-transform: none;
+  margin-left: 24px;
+  max-width: 100%;
+  display: inline-block;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &.body-layer1-600 {
+    font: 400 16px / 24px NeuePlak-Regular, -apple-system, BlinkMacSystemFont, Lato, Segoe UI, Verdana, Arial, sans-serif;
+  }
 }
 
 .color-transparent {
