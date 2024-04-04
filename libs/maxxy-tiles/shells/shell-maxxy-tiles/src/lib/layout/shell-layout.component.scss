@@ -2,11 +2,15 @@
 :host {
   display: block;
   background-color: $turqoise-light;
+  
+  background-image: url('../../../../../../ui/src/lib/assets/icons/maxxy-tiles-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* or contain, depending on your needs */
 }
 
 .container {
   margin-top: 10px;
-  border: solid 3px lightsalmon;
+  // border: solid 3px lightsalmon;
   border-radius: 1rem;
   padding: 1rem;
   overflow: hidden;
