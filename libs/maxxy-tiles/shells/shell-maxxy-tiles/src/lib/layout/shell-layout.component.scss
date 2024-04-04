@@ -1,7 +1,9 @@
 @import '../../../../../../ui/src/lib/styling/main.scss';
 :host {
+  position: absolute;
   display: block;
-  background-color: $turqoise-light;
+  height: 100%;
+  width: 100%;
   
   background-image: url('../../../../../../ui/src/lib/assets/icons/maxxy-tiles-background.svg');
   background-repeat: no-repeat;
@@ -9,11 +11,12 @@
 }
 
 .container {
-  padding: 1rem 0 1rem 0;
-  // border: solid 3px lightsalmon;
-  border-radius: 1rem;
-  // padding: 1rem;
-  overflow: hidden;
-  height: 100vh;
-  position: relative;
+  padding-top: 3rem;
+  // padding: 1rem 0 1rem 0;
+  // // border: solid 3px lightsalmon;
+  // border-radius: 1rem;
+  // // padding: 1rem;
+  // overflow: hidden;
+  // height: 100vh;
+  // position: relative;
 }
