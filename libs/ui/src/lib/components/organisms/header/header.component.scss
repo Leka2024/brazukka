@@ -34,16 +34,24 @@ header {
 }
 
 .header-navigation {
-  display: flex;
+  display: none;
   width:   100%;
+
+  @include medium {
+    display: flex;
+  }
 }
 nav {
-  margin: 1rem 3rem;
+  margin: 1rem 1.5rem;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
   justify-content: space-between;
   display: flex;
+
+  @include large {
+    margin: 1rem 3rem;
+  }
 }
 
 .header-list {
@@ -52,17 +60,23 @@ nav {
   justify-content: space-between;
   width          : 100%;
 }
+
 .header-languages {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   column-gap: 0.25rem;
+
+  @include medium {
+    display: flex;
+  }
+
 }
 
-.menu-icon {
+.app-hamburger {
   position: fixed;
   z-index: 200;
-  top: 0;
+  top: $size-1;
   right: $size-7;
   display: block;
   width: $size-8;
@@ -73,35 +87,57 @@ nav {
   border-radius: $size-2;
   transition: transform .3s $ease-in-quad;
   transform: translateY(0);
-}
 
-.menu-icon span {
-  display: block;
-  position: relative;
-  height: 0.5rem;
-  width: 100%;
-  background: $header-color-white;
-  opacity: 1;
-  left: 0;
-  top: 0.5rem;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out
-}
+  @include medium {
+    display: none;
+  }
 
-.menu-icon span:first-child {
-  top: 0.25rem;
-}
+  span {
+    position: absolute;
+    top: calc(50% + 0.125rem);
+    left: 50%;
+    display: block;
+    width: $size-6;
+    height: 0.125rem;
+    background-color: $header-color-white;
+    transform-origin: top left;
+    transition: background-color 0.15s $ease-in-quad, transform 0.15s $ease-in-quad;
+    will-change: opacity, transform;
 
-.menu-icon span:nth-child(2) {
-  top: 0.75rem;
-}
+    &:nth-child(1) {
+      transform: rotate(0) translate(-50%, -0.5rem);
+    }
+    &:nth-child(2) {
+      transform: rotate(0) translate(-50%, 0);
+    }
+    &:nth-child(3) {
+      opacity: 1;
+      transform: rotate(0) translate(-50%, 0.5rem);
+    }
+  }
 
-.menu-icon:hover span:first-child {
-  transform: rotate(45deg) translateY(10px) translateX(2px);
-}
+  &:hover {
+    cursor: pointer;
+  }
 
-.menu-icon:hover span:nth-child(2) {
-  transform: rotate(135deg) translateY(10px);
+  &.is-visible {
+    span {
+      &:nth-child(1) {
+        background-color: $header-color-white;
+        transform: rotate(45deg) translate(-50%, -50%);
+      }
+      &:nth-child(2) {
+        background-color: $header-color-white;
+        transform: rotate(-45deg) translate(-50%, -50%);
+      }
+      &:nth-child(3) {
+        background-color: transparent;
+        opacity: 1;
+        transform: rotate(0) translate(-50%, -50%);
+      }
+    }
+  }
+
 }
 
 .main-menu {
@@ -123,6 +159,9 @@ nav {
   padding-bottom: 2rem;
   transition: width .6s ease-out,transform .6s ease-out .6s;
 
+  @include medium {
+    display: none;
+  }
   &.is-visible {
     width: 100%;
   }
