@@ -25,6 +25,7 @@ export class HeaderComponent {
 
   navigateTo(route: string): void {
     this.router.navigate([`/${route}`]);
+    this.toggle();
   }
 
   toggle(): void {

@@ -39,6 +39,9 @@
   <span></span>
 </button>
 <ol class="main-menu" [ngClass]="{'is-visible': visible}">
+  <li>
+    <a (click)="navigateTo('products')" class="nav-link title-layer2-500"><span><brazukka-icon type="user" color="white" style="margin-bottom: 0.5rem;"></brazukka-icon></span>Products<span
+      class="description body-layer1-600"></span></a></li>  
   <li><a href="/products" class="nav-link title-layer2-500"><span class="roman-number"><span>I</span></span>Products<span
         class="description body-layer1-600"></span></a></li>
   <li><a href="/inspiration" class="nav-link title-layer2-500"><span class="roman-number"><span>II</span></span>INSPIRATION<span

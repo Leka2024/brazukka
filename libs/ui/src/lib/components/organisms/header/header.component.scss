@@ -191,6 +191,9 @@ nav {
   background-color: $header-color-white;
 }
 
+.main-menu li:hover {
+    cursor: pointer;
+}
 .main-menu li a {
   color: $header-color-gray;
 }
