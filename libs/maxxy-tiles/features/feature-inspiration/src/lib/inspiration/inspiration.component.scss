@@ -1,6 +1,33 @@
 :host {
   display: block;
   position: absolute;
-  margin-right: 20px;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   width: 100%;
+}
+
+.inspiration-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Change 200px to your fixed width */
+  gap: 2rem; /* Adjust the gap between tiles */
+}
+
+.inspiration-text {
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 1rem;
+
+  h3 {
+    color: #004aad;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  span {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
 }

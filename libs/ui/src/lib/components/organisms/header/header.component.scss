@@ -216,6 +216,13 @@ nav {
   }
 }
 
+.background-image {
+  margin-top: -30px;
+  margin-left: -50px;
+  @include small {
+    margin-left: 0;
+  }
+}
 .roman-number {
   left: 0.5rem;
   font-weight: 700;
