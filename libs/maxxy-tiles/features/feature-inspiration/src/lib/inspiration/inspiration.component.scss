@@ -1,10 +1,17 @@
+@import '../../../../../../ui/src/lib/styling/main.scss';
+
 :host {
   display: block;
   position: absolute;
   padding-top: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
+
+  @include medium {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 .inspiration-container {
@@ -17,9 +24,11 @@
   width: 100%;
   background-color: lightblue;
   border-radius: 1rem;
-  margin: 0.5rem;
   padding: 1rem;
 
+  @include medium {
+    margin: 0.5rem;
+  }
   h3 {
     color: #004aad;
     font-size: 1.5rem;

@@ -5,17 +5,17 @@ html {
 
 body {
   width: 100%;
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
+  min-height: 100vh;
   hyphens: auto;
   word-break: normal;
   overflow-x: hidden;
+  // background-image: url('../../../../../../ui/src/lib/assets/icons/maxxy-tiles-background.svg');
+  background-image: url('../../assets/icons/maxxy-tiles-background.svg');
 }
 
-*,
-*::before,
-*::after {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 

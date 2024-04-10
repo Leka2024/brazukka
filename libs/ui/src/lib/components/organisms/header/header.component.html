@@ -38,14 +38,27 @@
 </button>
 <ol class="main-menu" [ngClass]="{'is-visible': visible}">
   <li>
-    <a (click)="navigateTo('products')" class="nav-link title-layer2-500"><span><brazukka-icon type="user" color="white" style="margin-bottom: 0.5rem;"></brazukka-icon></span>Products<span
-      class="description body-layer1-600"></span></a></li>  
-  <li><a href="/products" class="nav-link title-layer2-500"><span class="roman-number"><span>I</span></span>Products<span
-        class="description body-layer1-600"></span></a></li>
-  <li><a href="/inspiration" class="nav-link title-layer2-500"><span class="roman-number"><span>II</span></span>INSPIRATION<span
-        class="description body-layer1-600">discover ideas</span></a></li>
-  <li><a href="/education" class="nav-link title-layer2-500"><span class="roman-number"><span>III</span></span>EDUCATION<span
-        class="description body-layer1-600">learning goals</span></a></li>
-  <li><a href="/contact" class="nav-link title-layer2-500"><span class="roman-number"><span>V</span></span>Contact<span
-        class="description body-layer1-600"></span></a></li>
+    <a (click)="navigateTo('products')" class="nav-link title-layer2-500"><span><brazukka-icon type="user" color="white" style="margin-bottom: 0.5rem;margin-left: 0.5rem;"></brazukka-icon></span>PRODUCTS<span
+      class="description body-layer1-600"></span></a>
+  </li>  
+  <!-- <li><a href="/products" class="nav-link title-layer2-500"><span class="roman-number"><span>I</span></span>Products<span
+        class="description body-layer1-600"></span></a></li> -->
+  <li>
+    <a (click)="navigateTo('inspiration')" class="nav-link title-layer2-500"><span><brazukka-icon type="user" color="white" style="margin-bottom: 0.5rem;margin-left: 0.5rem;"></brazukka-icon></span>INSPIRATION<span
+      class="description body-layer1-600">discover ideas</span></a>
+  </li>  
+  <!-- <li><a href="/inspiration" class="nav-link title-layer2-500"><span class="roman-number"><span>II</span></span>INSPIRATION<span
+        class="description body-layer1-600">discover ideas</span></a></li> -->
+  <li>
+    <a (click)="navigateTo('education')" class="nav-link title-layer2-500"><span><brazukka-icon type="user" color="white" style="margin-bottom: 0.5rem;margin-left: 0.5rem;"></brazukka-icon></span>EDUCATION<span
+      class="description body-layer1-600">learning goals</span></a>
+  </li>  
+  <!-- <li><a href="/education" class="nav-link title-layer2-500"><span class="roman-number"><span>III</span></span>EDUCATION<span
+        class="description body-layer1-600">learning goals</span></a></li> -->
+  <li>
+    <a (click)="navigateTo('contact')" class="nav-link title-layer2-500"><span><brazukka-icon type="user" color="white" style="margin-bottom: 0.5rem;margin-left: 0.5rem;"></brazukka-icon></span>CONTACT<span
+      class="description body-layer1-600"></span></a>
+  </li>  
+  <!-- <li><a href="/contact" class="nav-link title-layer2-500"><span class="roman-number"><span>V</span></span>Contact<span
+        class="description body-layer1-600"></span></a></li> -->
 </ol>

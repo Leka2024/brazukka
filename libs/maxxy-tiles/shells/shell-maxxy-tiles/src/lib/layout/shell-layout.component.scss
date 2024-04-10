@@ -1,13 +1,13 @@
 @import '../../../../../../ui/src/lib/styling/main.scss';
 :host {
-  position: absolute;
+  // position: absolute;
   display: block;
   height: 100%;
   width: 100%;
   
-  background-image: url('../../../../../../ui/src/lib/assets/icons/maxxy-tiles-background.svg');
-  background-repeat: no-repeat;
-  background-size: cover; /* or contain, depending on your needs */
+  // background-image: url('../../../../../../ui/src/lib/assets/icons/maxxy-tiles-background.svg');
+  // background-repeat: no-repeat;
+  // background-size: cover; /* or contain, depending on your needs */
 }
 
 .container {
